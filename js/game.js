@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var board = document.querySelector(".plansza");
     var score = 0;
+
+    
+    //console.log(score.innerHTML);
+       // var values = score.innerHTML;
+        //return values + "points";
+    
+
     timer = setInterval(function() {
         var zombie = document.createElement("div");
         zombie.classList.add("zombie");
@@ -33,11 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
         zombie.addEventListener("click", function (event) {
             this.remove();
             score++;
-            console.log(score);
-            //zwieksz
+            //console.log(score);
+            
             //wstaw do score
+            var result = document.querySelector(".score").innerHTML = score + " points";
+            
         })
         
+       
         
     }, 2250)
     })
