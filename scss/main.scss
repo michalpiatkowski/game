@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.plansza {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background: rgb(255,183,107); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,183,107,1) 0%, rgba(255,167,61,1) 50%, rgba(255,124,0,1) 51%, rgba(0,37,40,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(0,37,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(0,37,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#002528',GradientType=0 ); /* IE6-9 */
+}
+
+.zombie {
+    width: 200px;
+    height: 312px;
+    background: url(../img/walkingdead.png) left center;
+    animation: playZombie 0.5s steps(10) infinite, 
+        zombieWalk 15s 1;
+    position: absolute;
+    left: 100%;
+    bottom: 375px;
+    //transform: scale(0.2);
+    cursor: crosshair;
+}
+
+@keyframes playZombie {
+    100% {background-position: -2000px 0; }
+}
+
+@keyframes zombieWalk {
+    100% {
+        left: -300%;
+        z-index: 5;
+    }
+}
