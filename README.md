@@ -1,9 +1,7 @@
-Zombie game
+Catch Zombie
 
-Łap zombie - zdobywaj punkty!
+Animated game
 
-Projekt gry przygotowanej w ramach doskonalenia umiejętności w SASS oraz JavaScript podczas warsztatów Coders Lab.
+HTML, Scss, JavaScript
 
-Zapraszam do animowanej gry pod adresem:
-
-https://michalpiatkowski.github.io/game/
+Preview: https://michalpiatkowski.github.io/game/
